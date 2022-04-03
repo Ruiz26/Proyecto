@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Register - MagtimusPro</title>
+    <title>Iniciar sesión | I.T. Industrial</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/estilosLogin.css">
+    <link rel="stylesheet" href="assets/css/estilosLogin.css">
 </head>
 <body>
 
@@ -33,18 +33,18 @@
                     <!--Login-->
                     <form action="" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Correo Electronico" name = "correo">
+                        <input type="password" placeholder="Contraseña" name = "contrasena">
                         <button>Entrar</button>
                     </form>
 
                     <!--Register-->
                     <form action="" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Nombre completo" name = "nombre_completo">
+                        <input type="text" placeholder="Correo Electronico" name = "correo">
+                        <input type="text" placeholder="Usuario" name = "usuario">
+                        <input type="password" placeholder="Contraseña" name = "contrasena">
                         <button>Regístrarse</button>
                     </form>
                 </div>
@@ -52,6 +52,5 @@
 
         </main>
 
-        <script src="js/scriptLogin.js"></script>
 </body>
 </html>
