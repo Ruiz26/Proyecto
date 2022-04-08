@@ -35,8 +35,10 @@
                         <h2>Iniciar Sesión</h2>
                         <input type="text" placeholder="Correo Electronico" name = "correo">
                         <input type="password" placeholder="Contraseña" name = "contrasena">
-                        <button>Entrar</button>
+                        <button type="submit" value="a" name="boton">Entrar</button>
+                        <button type="submit" value="b" name="boton">¿Olvidaste tu contraseña?</button>
                     </form>
+                    
 
                     <!--Register-->
                     <form action="php/registro_usuario_be.php" method = "POST" class="formulario__register">
@@ -45,12 +47,13 @@
                         <input type="text" placeholder="Correo Electronico" name = "correo">
                         <input type="text" placeholder="Usuario" name = "usuario">
                         <input type="password" placeholder="Contraseña" name = "contrasena">
-                        <button>Regístrarse</button>
+                        <button>Registrarse</button>
                     </form>
                 </div>
             </div>
 
         </main>
 
+        <script src="assets/js/scriptLogin.js"></script>
 </body>
 </html>

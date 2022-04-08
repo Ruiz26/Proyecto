@@ -3,6 +3,9 @@
 session_start();
 
 include 'conexion_be.php';
+$boton = $_POST['boton'];
+
+if($boton == "a"){
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['contrasena'];
@@ -25,14 +28,12 @@ if($correo == "" || $contrasena == ""){
 
 }
 
-
 if(mysqli_num_rows($verificar_login) > 0){ 
 
 
     $_SESSION['usuario'] = $correo;
     header("location: ../assets/index.php");        
     exit();
-
 
 }else{
 
@@ -49,5 +50,22 @@ if(mysqli_num_rows($verificar_login) > 0){
 
 mysqli_close();
 
+}//if a
+
+
+if($boton == "b"){
+
+    echo '
+    
+    <script>
+        window.location = "../assets/recovery.php";
+    </script>
+
+    ';
+
+    exit();
+
+}
 
 ?>
+
