@@ -156,3 +156,27 @@ a.selected{
         left: -80px;
     }
 }
+
+h3{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+p{
+    align-items:baseline;
+    display: inline-flex;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.padre{
+    
+    margin: 20px;
+}
+
+
+
