@@ -1,5 +1,5 @@
 create table persona (
-indentificacion varchar(13) not null,
+identificacion varchar(13) not null,
 nombre_uno varchar(15) not null,
 nombre_dos varchar(15),
 apellido_uno varchar(20) not null,
@@ -38,7 +38,7 @@ create table matricula(
 n_matricula varchar(10) not null primary key,
 fecha_matricula date,
 n_folio varchar(5),
-indentificacion varchar(13) not null
+identificacion varchar(13) not null
 );
 create table capacidad(
 id_capacidad varchar(1) not null primary key,
