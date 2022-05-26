@@ -11,8 +11,12 @@
 body{
     margin-left: 80px;
     margin-top: 80px;
-    background: #fff;
+    background: #A4A2A1;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main{
+    padding: 20px;
 }
 
 header{
@@ -88,7 +92,7 @@ header{
 }
 
 .options__menu a{
-    color: #fff;
+    color: #ffffffb2;
     cursor: default;
     display: block;
     position: relative;
@@ -154,7 +158,6 @@ a.selected{
 }
 
 h3{
-    border-radius: 5px;
     background-color: cadetblue;
     text-align: center;
     padding: 10px;

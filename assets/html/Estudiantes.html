@@ -1,0 +1,260 @@
+<?php 
+
+    $conexion = mysqli_connect("localhost", "root", "", "login_register_db");
+    $usuarios = "SELECT * FROM usuarios"
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnico Industrial</title>
+
+    <link rel="stylesheet" href="../css/estilosMenu.css">
+    <link rel="stylesheet" href="../css/estilosEstudiantes.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-school"></i>
+            <h4>Instituto Tecnico Industrial</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="Inicio.php">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="Matricula.html">
+                <div class="option">
+                    <i class="far fa-file" title="Matricular"></i>
+                    <h4>Matricular</h4>
+                </div>
+            </a>
+            
+            <a href="Grados.html">
+                <div class="option">
+                    <i class="fa-solid fa-book" title="Cursos"></i>
+                    <h4>Grados</h4>
+                </div>
+            </a>
+
+            <a href="Asignaturas.html">
+                <div class="option">
+                    <i class="far fa-sticky-note" title="Asignaturas"></i>
+                    <h4>Asignaturas</h4>
+                </div>
+            </a>
+
+            <a href="Docentes.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Docentes"></i>
+                    <h4>Docentes</h4>
+                </div>
+            </a>
+
+            <a href="Estudiantes.php" class="selected">
+                <div class="option">
+                    <i class="far fa-address-card" title="Estudiantes"></i>
+                    <h4>Estudiantes</h4>
+                </div>
+            </a>
+            <a href="../../index.php">
+                <div class="option">
+                    <i class="fa-solid fa-arrow-right-from-bracket" title="Cerrar Sesión"></i>
+                    <h4>Cerrar Sesión</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <main>
+        <h1>Estudiantes</h1><br>
+        <p>Lista y busqueda de alumnos</p> <br>
+
+        <div class="datatable-container">
+            <div class="header-tools">
+                <div class="tools">
+                    <ul>
+                        <li><span><input type="checkbox"></span></li>
+                        <li>
+                            <button>
+                                <i class="material-icons">add_circle</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="material-icons">share</i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" class="search-input">
+                </div>
+    
+            </div>
+            <table class="datatable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Status</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>office</th>
+                        <th>Age</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="online"></span></td>
+                        <td>Marcos Rivas</td>
+                        <td>CEO</td>
+                        <td>San Francisco</th>
+                        <td>28</td>
+                        <td>2020/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="away"></span></td>
+                        <td>Lena Sanchez</td>
+                        <td>CIO</td>
+                        <td>Florida</th>
+                        <td>29</td>
+                        <td>2020/07/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="offline"></span></td>
+                        <td>Juan Perez</td>
+                        <td>CMO</td>
+                        <td>Mexico</th>
+                        <td>25</td>
+                        <td>2019/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="online"></span></td>
+                        <td>Alma Mater</td>
+                        <td>TI Subdirector</td>
+                        <td>Scatle</th>
+                        <td>28</td>
+                        <td>2020/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="online"></span></td>
+                        <td>Catalina Creel</td>
+                        <td>HR Director</td>
+                        <td>Sevilla</th>
+                        <td>42</td>
+                        <td>2020/12/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="away"></span></td>
+                        <td>Sergio Corona</td>
+                        <td>CEO</td>
+                        <td>San Francisco</th>
+                        <td>28</td>
+                        <td>2020/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="away"></span></td>
+                        <td>Mateo Vinicius</td>
+                        <td>CEO</td>
+                        <td>San Francisco</th>
+                        <td>33</td>
+                        <td>2020/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="online"></span></td>
+                        <td>Sofia Rivera</td>
+                        <td>CEO</td>
+                        <td>San Francisco</th>
+                        <td>26</td>
+                        <td>2020/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="offline"></span></td>
+                        <td>Agustin Lara</td>
+                        <td>CEO</td>
+                        <td>San Francisco</th>
+                        <td>54</td>
+                        <td>2020/05/01</td>
+                    </tr>
+                    <tr>
+                        <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                        <td><span class="offline"></span></td>
+                        <td>Mon Laferente</td>
+                        <td>CEO</td>
+                        <td>Silicon Valley</th>
+                        <td>34</td>
+                        <td>2020/05/01</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+    
+            <div class="footer-tools">
+                <div class="list-items">
+                    show
+                    <select name="n-entries" id="n-entries" class="n-entries">
+                        <option value="15">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+    
+                <div class="pages">
+                    <ul>
+                        <li><span class="active">1</span></li>
+                        <li><button>2</button></li>
+                        <li><button>3</button></li>
+                        <li><button>4</button></li>
+                        <li><span>...</span></li>
+                        <li><button>9</button></li>
+                        <li><button>10</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
