@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnico Industrial</title>
+
+    <link rel="stylesheet" href="../../css/estilosMenu.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <nav>
+            <div class="menu__side" id="menu_side">
+
+                <div class="name__page">
+                    <i class="fa-solid fa-school"></i>
+                    <h4>Instituto Tecnico Industrial</h4>
+                </div>
+        
+                <div class="options__menu">	
+        
+                    <a href="Inicio.html">
+                        <div class="option">
+                            <i class="fas fa-home" title="Inicio"></i>
+                            <h4>Inicio</h4>
+                        </div>
+                    </a>
+        
+                    <a href="Matricula.html" class="selected">
+                        <div class="option">
+                            <i class="far fa-file" title="Matricular"></i>
+                            <h4>Matricular</h4>
+                        </div>
+                    </a>
+                    
+                    <a href="Grados.html">
+                        <div class="option">
+                            <i class="fa-solid fa-book" title="Cursos"></i>
+                            <h4>Grados</h4>
+                        </div>
+                    </a>
+        
+                    <a href="Asignaturas.html">
+                        <div class="option">
+                            <i class="far fa-sticky-note" title="Asignaturas"></i>
+                            <h4>Asignaturas</h4>
+                        </div>
+                    </a>
+        
+                    <a href="Docentes.html">
+                        <div class="option">
+                            <i class="far fa-id-badge" title="Docentes"></i>
+                            <h4>Docentes</h4>
+                        </div>
+                    </a>
+        
+                    <a href="Estudiantes.php">
+                        <div class="option">
+                            <i class="far fa-address-card" title="Estudiantes"></i>
+                            <h4>Estudiantes</h4>
+                        </div>
+                    </a>
+                    <a href="../../../index.php">
+                        <div class="option">
+                            <i class="fa-solid fa-arrow-right-from-bracket" title="Cerrar Sesión"></i>
+                            <h4>Cerrar Sesión</h4>
+                        </div>
+                    </a>
+                    </div>
+
+                </div>
+        
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h1>Matricular</h1><br>
+        <div>
+            <center><h2>Libro de Matricula</h2></center>
+            <form class="padre" name="form" action="../../../php/registro.php" method="post">
+
+            <p>Identificacion:<input type="text" name="identificacion" required></p>
+            <p>Nombres:<input type="text" name="nombres" required></p>
+            <p>Apellidos:<input type="text" name="apellidos" required></p>
+            <p>F. Matricula:<input type="date" name="f_matricula" required></p>
+            <p>No. Matricula:<input type="text" name="no_matricula" required></p>
+            <p>No. Folio:<input type="text" name="folio" required></p>
+
+
+            <h3>2. Información Básica</h3>
+
+            <p>Dirección: <input type="text" name="direccion" required></p>
+            <p>Barrio: <input type="text" name="barrio" required></p>
+            <p>Telefono/Celular:<input type="text" name="telefono/celular" required></p>
+            <p>RH:<select name="rh" required>
+                <option value="A+" selected>A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                </select><p></p></p> 
+            <p>Género:<select name="genero" required>
+                <option value="Masculino" selected>Masculino</option>
+                <option value="Femenino">Femenino</option>
+                </select><p></p>
+            </p>
+            <p>Dto. Residencia:<input type="text" name="dto_residencia" required></p>
+            <p>Mpio. Residencia:<input type="text" name="mpio_residencia" required></p>
+            <p>F. Nacimiento:<input type="date" name="f_nacimiento" required></p>
+            <p>Departamento:<input type="text" name="departamento" required></p>
+            <p>Municipio:<input type="text" name="municipio" required></p>
+            <p>Calendario:<select name="calendario" required>
+                <option value="A" selected>A</option>
+                <option value="B">B</option>
+                </select><p></p>
+            </p>
+            <p>Zona:<select name="zona" required>
+                <option value="Urbana" selected>Urbana</option>
+                <option value="Rural">Rural</option>
+                </select><p></p>
+            </p>
+
+
+
+            <h3>3. Información Residencial</h3>
+            
+            <p>Institucion:<select name="institucion" required>
+                <option value="INSTITUTO TECNICO INDUSTRIAL" selected>INSTITUTO TECNICO INDUSTRIAL</option>
+                </select><p></p>
+            </p>
+            <p>Sede:<select name="sede" required>
+                <option value="TECNICO INDUSTRIAL" selected>TECNICO INDUSTRIAL</option>
+                <option value="Santander">Santander</option>
+                </select><p></p>
+            </p>
+            <p>Institucion de Bienestar de Origen:<input type="text" name="institucion_bienestar" required></p>
+            <p>Capacidad:<input type="text" name="capacidad" required></p>
+            <p>Discapacidad:<input type="text" name="discapacidad" required></p>
+            <p>Victima de conflicto:<select name="v_conflicto" required>
+                <option value="Si" selected>Si</option>
+                <option value="No">No</option>
+                </select><p></p>
+            </p>
+            <p>Dpto. Procedencia:<input type="text" name="dpto_procedencia" required></p>
+            <p>Mpio. Procedencia:<input type="text" name="mpio_procedencia" required></p>
+            <p>Etnia:<input type="text" name="etnia" required></p>
+            <p>Resguardo:<input type="text" name="resguardo" required></p>
+            <p>Sisben:<input type="text" name="sisben" required></p>
+            <p>Estrato:<select name="estrato" required>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select><p></p></p>
+            <p>EPS:<input type="text" name="eps" required></p>
+            <p>ARS:<input type="text" name="ars" required></p>
+
+
+            <h3>4. Situacion Academica</h3>
+
+
+            <p>Situacion Matricula Actual:<select name="situacion_matricula" required>
+                <option value="Matriculado" selected>Matriculado</option>
+                <option value="No matriculado">No matriculado</option>
+                </select><p></p></p></p></p>
+            <p>Grado Al cual se matricula:<select name="grado" required>
+                <option value="Sexto" selected>Sexto</option>
+                <option value="Septimo">Septimo</option>
+                <option value="Octavo">Octavo</option>
+                <option value="Noveno">Noveno</option>
+                <option value="Decimo">Decimo</option>
+                <option value="Once">Once</option>
+                </select><p></p></p>
+            </p>
+
+            <p>Curso:<select name="curso" required>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                </select><p></p></p>
+            </p>
+
+            <p>Jornada:<select name="jornada" required>
+                <option value="Mañana" selected>Mañana</option>
+                <option value="Tarde">Tarde</option>
+                </select><p></p></p>
+            </p>
+
+
+
+            <h3>5. Informacion Acudiente</h3>
+
+            <p>Nombre: <input type="text" name="nombre_a" required></p>
+            <p>Tipo Documento<select name="tipo_documento" required>
+                <option value="C.C" selected>C.C</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="T.I">T.I</option>
+                </select><p></p></p>
+            </p>
+            <p>Nº:<input type="text" name="numero_documento" required></p>
+            <p>Parentezco:<input type="text" name="parentezco" required></p>
+            <p>Tel. Residencia:<input type="text" name="residencia_a" required></p>
+                
+            <p>Dir. Residencia:<input type="text" name="dir_residencia" required></p>
+            <p>Dir. Laboral:<input type="text" name="dir_laboral" required></p>
+            <p>Tel. Laboral:<input type="text" name="tel_laboral" required></p>
+            <p>Celular:<input type="text" name="ceular_a" required></p>
+            <p>Ocupacion:<input type="text" name="ocupacion" required></p>
+            
+            <input type="submit" value="Cargar">
+            <input type="reset" value="Restablecer">
+       
+            
+            </form>
+        </div>
+
+    </main>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
