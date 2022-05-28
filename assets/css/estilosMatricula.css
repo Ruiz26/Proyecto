@@ -2,12 +2,31 @@
 input
 {
     border-radius: 5px;
+    
 }
 .logo
 {
+    justify-content: center;
     display: flex;
 }
-
+.logo img
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+}
+body main{
+    max-width: 1500px;
+}
+ol{
+    align-items:baseline;
+    display: inline-flex;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
 .logo img
 {
     margin-left: 10px;
@@ -31,22 +50,6 @@ h5
     text-align: center;
     font-weight: normal;
 }
-
-.sidebar-divider
-{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-p{
-    align-items:baseline;
-    display: inline-flex;
-    padding: 5px;
-    margin: 10px;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-}
 select
 {
     border-radius: 5px;
@@ -55,4 +58,9 @@ select
     
     margin: 50px;
     margin-top: 50px;
+}
+
+.texto
+{
+    max-width: 80vh;
 }

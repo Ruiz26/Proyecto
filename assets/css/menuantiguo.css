@@ -11,12 +11,8 @@
 body{
     margin-left: 80px;
     margin-top: 80px;
-    background: #A4A2A1;
+    background: #fff;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-main{
-    padding: 20px;
 }
 
 header{
@@ -92,7 +88,7 @@ header{
 }
 
 .options__menu a{
-    color: #ffffffb2;
+    color: #fff;
     cursor: default;
     display: block;
     position: relative;
@@ -156,9 +152,10 @@ a.selected{
         left: -80px;
     }
 }
-
+/*
 h3{
-    background-color: cadetblue;
+    border-radius: 5px;
+    background-color: #abccab;
     text-align: center;
     padding: 10px;
 }
@@ -176,7 +173,7 @@ p{
 .padre{
     
     margin: 20px;
-}
+}*/
 
 
 
